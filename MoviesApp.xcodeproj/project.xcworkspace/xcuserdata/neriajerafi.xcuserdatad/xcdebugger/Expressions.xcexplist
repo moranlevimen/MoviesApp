@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in MovieCell.setMovieCell(movie:indexArray:):MovieCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "DataManager.getDataManager().addMovieData(movie: movieData, indexArray: indexArray)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ViewController.viewDidLoad():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MoviesListVC.tableView(_:cellForRowAt:):MoviesListVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.movies[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataManager.addMovieData(movie:indexArray:):DataManager.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

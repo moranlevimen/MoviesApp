@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesListVC" customModule="MoviesApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="122" id="KGk-i7-Jjw" customClass="MovieCell" customModule="MoviesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noIcon" translatesAutoresizingMaskIntoConstraints="NO" id="h38-6A-bsN">
+                        <rect key="frame" x="8" y="5" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="NwZ-cq-y2E"/>
+                            <constraint firstAttribute="width" secondItem="h38-6A-bsN" secondAttribute="height" multiplier="1:1" id="vDh-8J-121"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eql-RU-1wu">
+                        <rect key="frame" x="111" y="3" width="213" height="30"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydZ-of-4xF">
+                        <rect key="frame" x="111" y="38" width="213" height="98.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-8c-Seq">
+                        <rect key="frame" x="1.5" y="109" width="113" height="30"/>
+                        <state key="normal" title="ClicK For Details"/>
+                        <connections>
+                            <action selector="clickButtonCell:" destination="-1" eventType="touchUpInside" id="0Gq-tj-qbc"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ydZ-of-4xF" secondAttribute="bottom" constant="3" id="7tZ-GB-taP"/>
+                    <constraint firstAttribute="trailing" secondItem="Eql-RU-1wu" secondAttribute="trailing" constant="3" id="9DZ-z5-f4J"/>
+                    <constraint firstItem="ydZ-of-4xF" firstAttribute="top" secondItem="Eql-RU-1wu" secondAttribute="bottom" constant="5" id="Idn-Jp-4VF"/>
+                    <constraint firstItem="Eql-RU-1wu" firstAttribute="leading" secondItem="h38-6A-bsN" secondAttribute="trailing" constant="3" id="aXt-ou-JaX"/>
+                    <constraint firstAttribute="bottom" secondItem="hvU-8c-Seq" secondAttribute="bottom" constant="0.5" id="dyH-Dv-TsB"/>
+                    <constraint firstItem="hvU-8c-Seq" firstAttribute="top" secondItem="h38-6A-bsN" secondAttribute="bottom" constant="4" id="hq8-8o-Ofn"/>
+                    <constraint firstItem="Eql-RU-1wu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="htC-XL-hoZ"/>
+                    <constraint firstItem="hvU-8c-Seq" firstAttribute="centerX" secondItem="h38-6A-bsN" secondAttribute="centerX" id="mEF-1p-1ij"/>
+                    <constraint firstItem="h38-6A-bsN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="nhl-nt-nNg"/>
+                    <constraint firstAttribute="trailing" secondItem="ydZ-of-4xF" secondAttribute="trailing" constant="3" id="qfX-ZH-LZJ"/>
+                    <constraint firstItem="ydZ-of-4xF" firstAttribute="leading" secondItem="h38-6A-bsN" secondAttribute="trailing" constant="3" id="vUI-y4-5Xx"/>
+                    <constraint firstItem="h38-6A-bsN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="vkx-cq-oNe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonCell" destination="hvU-8c-Seq" id="9IX-H2-u4I"/>
+                <outlet property="movieImage" destination="h38-6A-bsN" id="gbq-6Y-QX5"/>
+                <outlet property="movieNameLabel" destination="Eql-RU-1wu" id="TUF-bR-p8N"/>
+                <outlet property="yearLabel" destination="ydZ-of-4xF" id="qXn-Lc-x0k"/>
+            </connections>
+            <point key="canvasLocation" x="-378.39999999999998" y="165.51724137931035"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noIcon" width="256" height="256"/>
+    </resources>
+</document>
