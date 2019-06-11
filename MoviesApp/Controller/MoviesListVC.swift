@@ -17,7 +17,7 @@ class  MoviesListVC: UIViewController {
     func VCInit()  {
         self.activityIndicator.startAnimating()
         self.table.rowHeight = UITableView.automaticDimension
-        self.table.estimatedRowHeight = 120
+        self.table.estimatedRowHeight = 80
         let nib = UINib(nibName: "MovieCell", bundle: nil);
         self.table.register(nib, forCellReuseIdentifier: "MovieCell");
     }
